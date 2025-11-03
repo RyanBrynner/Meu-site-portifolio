@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Brynner - Portfólio</title>
+
+  <!-- Links CSS -->
+  <link rel="stylesheet" href="css/body.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Fundo com partículas -->
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/background.js"></script>
+
+  <!-- Header -->
+  <header>
+    <div class="menu-hamburguer" id="menuToggle" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+
+      <div class="menu-mobile" id="menu-mobile">
+        <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="#"><i class="fa-solid fa-circle-user"></i>Sobre</a>
+        <a href="#"><i class="fa-solid fa-microchip"></i>Tecnologias</a>
+        <a href="#"><i class="fa-solid fa-diagram-project"></i>Projetos</a>
+      </div>
+    </div>
+
+    <h1 class="txt-text-name">{ Ryan Brynner }</h1>
+
+    <nav class="menu-principal">
+      <a href="#">Home</a>
+      <a href="#">Sobre</a>
+      <a href="#">Tecnologias</a>
+      <a href="#">Projetos</a>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="texto-de-apresentação">
+      <div class="txt-apresentation">
+        <h2>Olá, eu sou o Ryan Brynner - <span>Desenvolvedor em evolução</span></h2>
+        <p>
+          Transformo ideias em código. Estou sempre aprendendo novas tecnologias e criando projetos para evoluir como programador. Aqui você encontra meus trabalhos, habilidades e estudos.
+        </p>
+        <button class="btn-button-download">
+          Baixar Currículo <i class="fa-solid fa-download"></i>
+        </button>
+      </div>
+
+      <div class="animation-Lottie">
+        <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+        <dotlottie-wc
+        src="https://lottie.host/1340ef3a-b83b-4f8d-ab4e-6a74a1feb9b3/ZXZ6YUxEqo.lottie" style="width: 400px; height: 300px;"
+        autoplay loop>
+        </dotlottie-wc>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sobre mim:</h2>
+      <p style="color: white;">Breve texto sobre você aqui...</p>
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/navBar.js"></script>
+</body>
+</html>
