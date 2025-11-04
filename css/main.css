@@ -15,7 +15,9 @@ main {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  gap: 60px; /* espaçamento entre as seções */
+  height: auto;
+  margin: 0 auto;
+  gap: 70px; /* espaçamento entre as seções */
   padding: 40px 20px;
 }
 
@@ -26,6 +28,8 @@ main > section.texto-de-apresentação {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  margin: 70px 0;
+  border-bottom: 4px solid var(--cor5);
   border-left: 10px solid var(--cor5);
   border-radius: 10px;
   width: 80%;
@@ -73,25 +77,31 @@ main > section.texto-de-apresentação .btn-button-download {
   transition: 0.3s;
 }
 
+main > section.texto-de-apresentação .btn-button-sobre-mim {
+  display: none;
+}
+
 main > section.texto-de-apresentação .btn-button-download:hover {
   opacity: 0.8;
 }
 
-.animation-Lottie {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
+main > section.texto-de-apresentação > section.sobremim {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
 }
 
 /* --- SEÇÃO SOBRE MIM (ABAIXO) --- */
 main > section.sobre-mim {
   display: flex;
+  margin: 40px 0;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.7);
   align-items: flex-start;
   justify-content: center;
+  border-top: 5px solid var(--cor5);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   gap: 20px;
   color: white;
@@ -118,34 +128,71 @@ main > section.sobre-mim p {
 }
 
 /* --- RESPONSIVIDADE --- */
-@media (max-width: 768px) {
+@media (max-width: 926px) {
   main {
-    padding: 20px 10px;
-    gap: 40px;
+    padding: 0px 10px;
+    gap: 30px;
   }
 
   main > section.texto-de-apresentação {
     flex-direction: column;
+    margin: none;
     width: 95%;
     gap: 15px;
   }
 
   main > section.texto-de-apresentação .txt-apresentation h2 {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    margin: 5px 0px 0px 0px;
     text-align: center;
   }
 
+  main > section.texto-de-apresentação .txt-apresentation p {
+    font-size: 1em;
+  }
+
   main > section.texto-de-apresentação .btn-button-download {
-    width: 100%;
+    width: 70%;
+    height: 40px;
+    margin: 0 auto;
   }
 
   .animation-Lottie {
-    max-width: 300px;
+    width: 100%;
     height: auto;
+    max-width: 300px;
     margin: 0 auto;
   }
 
   main > section.sobre-mim {
     width: 95%;
   }
+
+  main > section.texto-de-apresentação .btn-button-sobre-mim{
+    background: linear-gradient(to right, var(--cor5), var(--cor4));
+    border: none;
+    padding: 10px 0;
+    width: 250px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 0 auto;
+  }
+
+  main > section.texto-de-apresentação .btn-button-sobre-mim a {
+    color: white;
+    text-decoration: none;
+  }
+
+  main > section.texto-de-apresentação .btn-button-sobre-mim a i {
+    margin-left: 8px;
+  }
+
+  main > section.texto-de-apresentação .btn-button-sobre-mim:hover {
+    opacity: 0.8;
+  }
+  
 }

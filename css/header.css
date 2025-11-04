@@ -100,6 +100,9 @@ header > nav.menu-principal > a:hover{
     header > div.menu-hamburguer div.menu-mobile{
         display: none;
         position: fixed;
+        transform: translate(-100%);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        opacity: 0;
         top:80px;
         left: 0;
         bottom: 0;
@@ -118,7 +121,8 @@ header > nav.menu-principal > a:hover{
 
     header > div.menu-hamburguer div.menu-mobile.active{
         display: flex;
-        transform: translate 0.25s ease, opacity 0.25s ease;
+        transform: translate(0);
+        opacity: 1;
     }
 
     header > div.menu-hamburguer div.menu-mobile a{

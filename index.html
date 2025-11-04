@@ -26,8 +26,8 @@
       <i class="fa-solid fa-bars"></i>
 
       <div class="menu-mobile" id="menu-mobile">
-        <a href="#"><i class="fa-solid fa-house"></i>Home</a>
-        <a href="#"><i class="fa-solid fa-circle-user"></i>Sobre</a>
+        <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="#sobre-mim"><i class="fa-solid fa-circle-user"></i>Sobre</a>
         <a href="#"><i class="fa-solid fa-microchip"></i>Tecnologias</a>
         <a href="#"><i class="fa-solid fa-diagram-project"></i>Projetos</a>
       </div>
@@ -36,15 +36,15 @@
     <h1 class="txt-text-name">{ Ryan Brynner }</h1>
 
     <nav class="menu-principal">
-      <a href="#">Home</a>
-      <a href="#">Sobre</a>
+      <a href="#home">Home</a>
+      <a href="#sobre-mim">Sobre</a>
       <a href="#">Tecnologias</a>
       <a href="#">Projetos</a>
     </nav>
   </header>
 
   <!-- Main -->
-  <main>
+  <main id="home">
     <section class="texto-de-apresentação">
       <div class="txt-apresentation">
         <h2>Olá, eu sou o Ryan Brynner - <span>Desenvolvedor em evolução</span></h2>
@@ -54,18 +54,21 @@
         <button class="btn-button-download">
           Baixar Currículo <i class="fa-solid fa-download"></i>
         </button>
+        <button class="btn-button-sobre-mim">
+          <a href="#sobre-mim">Sobre-mim<i class="fa-solid fa-circle-user"></i></a>
+        </button>
       </div>
 
       <div class="animation-Lottie">
         <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
         <dotlottie-wc
-        src="https://lottie.host/1340ef3a-b83b-4f8d-ab4e-6a74a1feb9b3/ZXZ6YUxEqo.lottie" style="width: 430px; height: 350px;"
+        src="https://lottie.host/1340ef3a-b83b-4f8d-ab4e-6a74a1feb9b3/ZXZ6YUxEqo.lottie" style="width: 300px; height: 300px; margin: 0 auto;"
         autoplay loop>
         </dotlottie-wc>
       </div>
     </section>
 
-    <section class="sobre-mim">
+    <section class="sobre-mim" id="sobre-mim">
       <h2>Sobre mim:</h2>
       <p>
         Comecei a estudar programação em 2024, motivado pela curiosidade de entender como aplicativos e sites funcionam por trás da parte visual.<br> Desde então, venho estudando lógica de programação, redes de computadores, algoritmo, estrutura de dados e fundamentos da internet, incluindo o protocolo TCP/IP. Hoje possuo alguns diplomas na área e continuo evoluindo diariamente como desenvolvedor.
